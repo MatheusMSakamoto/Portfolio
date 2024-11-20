@@ -7,7 +7,7 @@
 
 body {
     font-family: "Karla", sans-serif;
-    color: rgb(230, 246, 7);
+    color: #067206;
     line-height: 1.6;
     z-index: 1;
     position: relative;
@@ -70,6 +70,10 @@ h1, h2, p {
 .section {
     padding: 20px;
     min-height: 450px;
+}
+.projetos{
+    display: flex;
+    justify-content: space-around;
 }
 
 
