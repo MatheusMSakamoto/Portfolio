@@ -3,7 +3,8 @@
 .card {
     display: flex;
     justify-content: center;
-    width: 450px;
+    width: 90%;
+    max-width: 450px;
     height: 350px;
     position: relative;
     background-color: #24232367;
@@ -53,5 +54,25 @@
 .card:hover .content {
     top: 130px;
     height: 250px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        max-width: 100%;
+    }
+
+    .card .img-box {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 0px;
+        transition: 0.5s;
+    }
 }
 

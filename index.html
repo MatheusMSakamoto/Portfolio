@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="wrapper">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Francois+One&family=PT+Sans+Caption:wght@400;700&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,67 +16,115 @@
     <video autoplay loop muted class="video_body">
         <source src="public/4954752_Coll_halloween_Dusty_1920x1080.mp4" type="video/mp4">
     </video>
-    <header class="header">
+    <header class="header gradient-png">
         <nav class="navbar">
             <div class="title_navbar">
                 <h1>&lt;<span style="color: gray">Fullstack</span>.Developer&gt;</h1>
             </div>
-            <ul class="nav_list">
+            <button class="hamburger" aria-label="Abrir menu">
+                ☰
+            </button>
+            <ul class="nav-links">
                 <li class="nav-item"><a href="#home">Home</a></li>
-                <li class="nav-item"><a href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a href="#about">Sobre</a></li>
                 <li class="nav-item"><a href="#skills">Skills</a></li>
-                <li class="nav-item"><a href="#projetos">Projetos</a></li>
+                <li class="nav-item"><a href="#projects">Projetos</a></li>
                 <li class="nav-item"><a href="#contato">Contato</a></li>
             </ul>
         </nav>   
     </header>
     <section class="section home" id="home">
-        <div>
-            <img src="public/default-user.png" alt="Foto de Matheus">
+        <div class="round">
+            <img src="public/profile_photo_background.png" alt="Foto de Matheus">
         </div>
-        <div>
-            <h1>Matheus <br/><span style="color: lightblue;">Sakamoto</span></h1>
+        <div style="text-align: center;">
+            <h1>Matheus <br/><span style="color: gray;">Sakamoto</span></h1>
         </div>
         <div class="social-media-buttons">
-            <a href=""><i class="fa-regular fa-envelope"></i>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href="https://account.microsoft.com/profile?lang=pt-BR#main-content-landing-react"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.instagram.com/mmsakamoto1/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/matheus-sakamoto-99ab21339/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/MatheusMSakamoto"><i class="fa-brands fa-github"></i></a>
         </div>
     </section>
 
     <section class="section about" id="about">
-        <p>
-            Meu nome é Matheus Sakamoto, 
-            Lorem ipsum dolor sit amet. Aut officia voluptate ea distinctio necessitatibus eum nihil ullam est consequuntur corrupti 
-            quo nostrum aliquam sit deleniti galisum id doloribus amet. Vel harum animi ad aspernatur rerum non internos consequatur. 
-            Ad sint voluptates quo tempore ipsam rem dolor laborum cum ipsam repellendus.
-        </p> 
+        <div>
+            <p>
+                Oi, eu sou o Matheus Sakamoto! Tenho 27 anos e sou apaixonado por tecnologia e programação. Atualmente, estou cursando o Técnico em Desenvolvimento de Sistemas no Senac Hub Academy, 
+                onde tenho aprendido e me aprofundado nas diversas áreas do desenvolvimento de software, como programação, banco de dados e desenvolvimento web.
+                Ao longo da minha jornada, tive a oportunidade de trabalhar com várias linguagens de programação e ferramentas, como Python, CSS, JavaScript, PHP, SQL.
+                Para mim, o mais importante é entender o problema e encontrar soluções criativas e eficientes.
+            </p>
+        </div>
     </section>
     
     <section class="section skills" id="skills">
+        <h1>Skills</h1>
         <div class="skills-list-logo">
-            <div>
-                <img class="img-logo" src="public/logo-html.png" alt="Logo HTML">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="public/logo-html.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>HTML 5</h1>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img class="img-logo" src="public/logo-css.png" alt="Logo CSS">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="public/logo-css.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>CSS3</h1>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img class="img-logo" src="public/logo-javascript.png" alt="Logo JavaScript">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="public/logo-javascript.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>JavaScript</h1>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img class="img-logo" src="public/php (1).png" alt="Logo PHP">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="public/php%20(1).png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>PHP</h1>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img class="img-logo" src="public/logo-python.png" alt="Logo Python">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="public/logo-python.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Python</h1>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img class="img-logo" src="public/logo-mysql.png" alt="Logo Mysql">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="public/logo-mysql.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>MySQL</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="section projetos">
+    <section class="section projects" id="projects">
         <div class="card">
             <div class="img-box">
                 <img src="public/landingpage1.png">
@@ -84,7 +135,7 @@
                     Landingpage projetada para um restaurante, possibilitando aos clientes uma experiência fluida para visualizar o cardápio,
                     realizar pedidos e deixar avaliações sobre o estabelecimento e pratos comercialziados. Linguagens utilizadas na produção: HTML5, CSS3 e JavaScript
                 </p>
-              
+
             </div>
         </div>
         <div class="card">
@@ -96,7 +147,7 @@
                 <p>
                     Atividade realizada a fim de aprendizado utilizando HTML5 E CSS3 com o tema de game automobilistico
                 </p>
-              
+
             </div>
         </div>
         <div class="card">
@@ -109,12 +160,18 @@
                     Projeto integrador do curso ténico de desenvolvimento de sistemas do SENAC HUB ACADEMY, com a proposta de criar um site
                     de ecommerce sobre produtos de informática e derivados, sou responsável pela administração do banco de dados do sistema utilizando das linguagens principais PHP e MySQL.
                 </p>
-              
+
             </div>
         </div>
     </section>
-    
-    <footer class="footer-items">
+
+    <footer class="footer-items" id="contato">
+         <div class="social-media-buttons">
+            <a href="https://account.microsoft.com/profile?lang=pt-BR#main-content-landing-react"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.instagram.com/mmsakamoto1/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/matheus-sakamoto-99ab21339/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/MatheusMSakamoto"><i class="fa-brands fa-github"></i></a>
+        </div>
         <span class="copyright">
             &copy; 2024 Matheus M Sakamoto
         </span>
@@ -122,3 +179,12 @@
 
 </body>
 </html>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
